@@ -5,7 +5,7 @@ let num2 = parseInt(input("Digite outro número: "));
 let operacao = input("Informa a operação matemática que deseja realizar (+,-,/,*): ");
 
 if (operacao == "+") {
-    console.log("A some é", num1 + num2)
+    console.log("A soma é", num1 + num2)
 }
 else if (operacao == "-") {
     console.log("A subtração é", num1 - num2)
