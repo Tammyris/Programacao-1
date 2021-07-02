@@ -49,7 +49,7 @@ for (i=0; i<quantidadeAlternativas; i++){
     listaPosicoes[i] = posOpcao;
 }
 
-//Resolvendo a repitição das alternativas no vetor das opções de resposta
+//Resolvendo a repetição das alternativas no vetor das opções de resposta
 while (listaPosicoes.indexOf(posOpcao)>=0){ //Se o indexof retorna negativo é porque o elemento não está presente, logo se é >=0 ele já se encontra.
     posOpcao = Math.floor(Math.random() * qtdAlternativas) //enquanto for elemento repetido ele faz novamente a randomização
 }
@@ -77,15 +77,13 @@ respostaProva = {
     resposta: []
 }
 
-
-
 for(k=0; k<listaPosicoes.length;k++){
     respostaProva.resposta[k] = input("Digite a resposta: ")
     if (respostaProva.resposta[k] == gabaritoQuestaoProva.gabarito[k]){
         console.log("Correto")
     }
     else {
-        console.log("incorreto")
+        console.log("Incorreto")
     }
 }
 
