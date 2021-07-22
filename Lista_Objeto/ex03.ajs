@@ -1,0 +1,27 @@
+//questao 01
+//construtores inicializando os atributos
+class Idade{
+    constructor(anoNascimento, anoAtual){
+        this.anoNascimento = 1987;
+        this.anoAtual = 2021;
+    }
+
+    //setter
+    set AnoNascimento(AnoNascimento){
+        this.anoNascimento = AnoNascimento
+    }
+    set AnoAtual(AnoAtual){
+        this.anoAtual = AnoAtual
+    }
+    //getter
+    get idade(){
+        return this.calcularIdade()
+    }
+    calcularIdade(){
+        return parseInt(this.anoAtual - this.anoNascimento);
+    }
+
+}
+
+let Idade1 = new Idade();
+console.log(Idade1.idade)
